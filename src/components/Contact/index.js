@@ -40,11 +40,12 @@ function ContactForm() {
 
     //   console.log(formState);
     return (
-        <section>
-            <h1 data-testid="h1tag">Contact me</h1>
-            <form id="contact-form" onSubmit={handleSubmit}>
+        <section className="container">
+            <h1>Contact me</h1>
+            <form className="contact-form" id="contact-form" onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name:</label>
+                    <br></br>
                     <input
                         type="text"
                         defaultValue={name}
@@ -54,6 +55,7 @@ function ContactForm() {
                 </div>
                 <div>
                     <label htmlFor="email">Email address:</label>
+                    <br></br>
                     <input
                         type="email"
                         defaultValue={email}
@@ -63,6 +65,7 @@ function ContactForm() {
                 </div>
                 <div>
                     <label htmlFor="message">Message:</label>
+                    <br></br>
                     <textarea
                         name="message"
                         defaultValue={message}
@@ -75,7 +78,7 @@ function ContactForm() {
                         <p className="error-text">{errorMessage}</p>
                     </div>
                 )}
-                <button data-testid="button" type="submit">Submit</button>
+                <button className="button" type="submit">Submit</button>
             </form>
         </section >
     );
