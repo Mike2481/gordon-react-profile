@@ -1,55 +1,46 @@
-import React, { useEffect } from "react";
-import { capitalizeFirstLetter } from "../../utils/helpers";
-
-function Nav(props) {
-  const {
-    categories = [],
-    setCurrentCategory,
-    currentCategory,
-    // contactSelected,
-    setContactSelected
-  } = props;
-
-  useEffect(() => {
-    document.title = capitalizeFirstLetter(currentCategory.name);
-  }, [currentCategory]);
-
-  return (
+function Nav({ currentPage, handlePageChange }) {
+    return (
     <header>
-      <h2>
-      Michael Gordon
-      </h2>
-      <nav>
-        <ul>
-          <li>
-            <a href="#about" onClick={() => setContactSelected(false)}>
-              About me
-            </a>
-          </li>
-          <li>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
-          </li>
-          {categories.map((category) => (
-            <li
-            //   className={`mx-1 ${
-            //     currentCategory.name === category.name && !contactSelected && 'navActive'
-            //     }`}
-              key={category.name}
-            >
-              <span
-                onClick={() => {
-                  setCurrentCategory(category);
-                  setContactSelected(false);
-                }}
-              >
-                {capitalizeFirstLetter(category.name)}
-              </span>
+        <h2>Mike Gordon</h2>
+        <ul className="nav nav-tabs">
+            <li className="nav-item">
+                <a
+                    href="#about"
+                    onClick={() => handlePageChange('About')}
+                    className={currentPage === 'About' ? 'nav-link-active' : 'nav-link'}
+                >
+                    About Me
+                </a>
             </li>
-          ))}
+            <li className="nav-item">
+                <a
+                    href="#portfolio"
+                    onClick={() => handlePageChange('Portfolio')}
+                    className={currentPage === 'Portfolio' ? 'nav-link-active' : 'nav-link'}
+                    >
+                    Portfolio
+                </a>
+            </li>
+            <li className="nav-item">
+                <a
+                    href="#contact"
+                    onClick={() => handlePageChange('Contact')}
+                    className={currentPage === 'Contact' ? 'nav-link-active' : 'nav-link'}
+                    >
+                    Contact
+                </a>
+            </li>
+                    <li className="nav-item">
+                    <a
+                      href="#resume"
+                      onClick={() => handlePageChange('Resume')}
+                      className={currentPage === 'Resume' ? 'nav-link-active' : 'nav-link'}
+                    >
+                      Resume
+                    </a>
+                  </li>
         </ul>
-      </nav>
     </header>
-  );
+    );
 }
-
 export default Nav;
