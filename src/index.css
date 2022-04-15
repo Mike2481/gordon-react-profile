@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #afb2c2;
+  /* background-color: #afb2c2; */
 }
 
 body {
@@ -13,12 +13,24 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
+  width: auto;
+  position: relative;
 }
 
 :root {
   --primary: #2c2f30;
   --secondary: #edf0f1;
   --text-shadow: rgb(113, 121, 195);
+  --text-color: rgb(163, 71, 61);
+}
+#root {
+  position: relative;
+  padding-bottom: 60px;
+}
+.main-container {
+  position: relative;
+  height: 100vh;
+  background-color: var(--secondary);
 }
 
 code {
@@ -31,8 +43,8 @@ code {
 li,
 a {
   font-weight: 500;
-  font-size: 16px;
-  color: var(--secondary);
+  font-size: 1.5rem;
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -40,14 +52,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  border-bottom: 0.25rem black solid;
+  padding: 1rem 1rem 1.5rem 1rem;
+  /* border-bottom: 0.25rem black solid; */
+  max-height: 8rem;
+  background-color: var(--secondary);
 }
 header h1 {
-  color: var(--secondary);
+  color: var(--text-color);
   font-size: 2.5rem;
   padding: 0.25rem;
-  text-shadow: 1.5px 1px var(--text-shadow);
+  text-shadow: 2px 1.5px var(--text-shadow);
+  margin: 0 0 1rem 0;
 }
 
 .nav-links {
@@ -67,7 +82,7 @@ header h1 {
 }
 .nav-link-active {
   color: var(--primary);
-  text-shadow: 1px 0.5px var(--secondary);
+  text-shadow: 2px 1.5px var(--secondary);
 }
 
 /* header styling end */
@@ -81,18 +96,20 @@ header h1 {
 }
 .about-container {
   position: relative;
-  margin: 3rem;
+  /* margin: 3rem; */
+  background-image: linear-gradient(var(--secondary), rgb(47, 47, 244));
+  padding: 1rem 0;
 }
 .about-title {
   position: absolute;
   right: 50%;
   font-weight: 500;
   font-size: 1.5rem;
-  color: var(--secondary);
+  color: var(--text-color);
   text-shadow: 1.5px 1px var(--text-shadow);
 }
 .about-text {
-  margin: 1rem;
+  margin: 1rem 1rem 0 1rem;
   color: var(--secondary);
   text-shadow: 1.5px 1px var(--text-shadow);
 }
@@ -100,9 +117,12 @@ header h1 {
 /* contact page styling start */
 
 .container {
-  width: 50%;
+  width: 100vw;
   max-width: 1200px;
-  margin: 2rem auto;
+  padding: 0.5rem;
+  text-align: center;
+  height: 100%;
+  background-color: var(--secondary);
 }
 input {
   font-size: 1rem;
@@ -116,30 +136,53 @@ input {
 
 input:focus {
   border: 1px solid var(--secondary);
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
 textarea {
-	width: 400px;
-	height: 120px;
-	border: 2px solid var(--secondary);
+  width: 350px;
+  height: 120px;
+  border: 2px solid var(--secondary);
   border-radius: 1rem;
-	padding: 5px;
+  padding: 5px;
   font-size: 1rem;
   font-weight: 500;
-
+  max-width: 100vw;
+  margin: 0 1rem 0 0;
 }
 
 .button {
-  background-color: rgb(83, 200, 239);
-  border-radius: .5rem;
-  box-shadow: 1px .5px var(--text-shadow);
+  background-color: rgb(77, 131, 225);
+  border-radius: 0.5rem;
+  box-shadow: 1px 0.5px var(--text-shadow);
 }
 .container h1 {
   font-weight: 500;
   font-size: 2rem;
-  color: var(--secondary);
+  color:rgb(77, 131, 225);
   text-shadow: 1.5px 1px var(--text-shadow);
+}
+.contact-form {
+  animation: slideIn 700ms ease-in;
+  margin-top: 1rem;
 
 }
+@keyframes slideIn {
+  0% {
+    transform: skewX(53deg) translateX(-500px);
+  }
+  100% {
+    transform: skew(0deg);
+  }
+}
 
+/* footer styling */
 
+.footer {
+  background-color: white;
+
+}
+.logo {
+  right: 5%;
+  bottom: 0;
+  width: 60px;
+}

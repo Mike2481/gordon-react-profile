@@ -1,4 +1,4 @@
-import avatar from '../images/profile3.jpg'
+import avatar from '../../assets/images/profile3.jpg'
 
 export default function About() {
     return (
@@ -6,16 +6,13 @@ export default function About() {
             <h1 className='about-title'>About Me</h1>
             <img className="profile-pic" src={avatar} alt="Mike Gordon with lobsters" />
             <p className='about-text'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-                velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-                ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-                non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-                ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-                rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-                tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-                porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-                vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-                fames ac ante ipsum primis in faucibus.
+                Hi, I'm Mike
+
+                I'm a driven person by nature and have a strong work ethic. I have high expectations for myself when it comes to the quality of my work, which translates to an amazing finished product for you!
+
+                Although I do like to code websites from scratch, my real passion is to bring modernity to existing websites through interesting interactive features.
+
+                Check out some of my work below, and please don't hesitate to reach out if you have any questions or want to get your project started
             </p>
         </div>
     );

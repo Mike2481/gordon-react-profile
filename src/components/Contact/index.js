@@ -41,8 +41,8 @@ function ContactForm() {
     //   console.log(formState);
     return (
         <section className="container">
-            <h1>Contact me</h1>
             <form className="contact-form" id="contact-form" onSubmit={handleSubmit}>
+            <h1>Contact me</h1>
                 <div>
                     <label htmlFor="name">Name:</label>
                     <br></br>
