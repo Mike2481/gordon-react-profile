@@ -1,27 +1,3 @@
-// import React from "react";
-// // import About from './components/About';
-// import ContactForm from './components/Contact';
-// import Header from './components/Header';
-// // import Portfolio from './components/Portfolio';
-// // import Project from './components/Project';
-// // import Resume from './components/Resume';
-
-// function App() {
-
-//   return (
-//     <div>
-//         <Header></Header>
-//       <main>
-//         {/* <About /> */}
-//         <ContactForm />
-//         {/* <Portfolio /> */}
-//         {/* <Resume /> */}
-//       </main>
-//     </div>
-//   );
-// }
-
-// export default App;
 
 import React, { useState } from 'react';
 import Nav from '../src/components/Header';
@@ -29,6 +5,7 @@ import About from '../src/components/About';
 import Portfolio from '../src/components/Portfolio';
 import Contact from '../src/components/Contact';
 import Resume from './components/Resume';
+import Footer from './components/Footer';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -51,6 +28,7 @@ export default function PortfolioContainer() {
     <div>
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
+      <Footer />
     </div>
   );
 }

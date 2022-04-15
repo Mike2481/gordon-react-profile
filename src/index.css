@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #afb2c2;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,6 +12,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+}
+
+:root {
+  --primary: #2c2f30;
+  --secondary: #edf0f1;
+  --text-shadow: rgb(113, 121, 195);
 }
 
 code {
@@ -12,9 +26,57 @@ code {
     monospace;
 }
 
+/* header styling start */
+
+li, a {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: .25rem black solid;
+}
+header h1 {
+  color: var(--secondary);
+  font-size: 2.5rem;
+  padding: .25rem;
+  text-shadow: 1.5px 1px var(--text-shadow);
+}
+
+.nav-links {
+  list-style: none;
+}
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+  text-shadow: 1.5px 1px var(--text-shadow);
+}
+.nav-links li a {
+  transition: all 0.4s ease 0s;
+}
+.nav-links li a:hover {
+  color: white;
+  text-shadow: 2px 2px var(--primary);
+}
+.nav-link-active {
+  color: var(--primary);
+  text-shadow: 1px .5px var(--secondary);
+}
+
+/* header styling end */
+
+/* About Me page styling */
+
 .profile-pic {
   border-radius: 50%;
-  margin: 1rem;
+  margin: 3.5rem 1rem 0 1rem;
+  padding: 1rem;
 }
 .about-container {
   position: relative;
@@ -24,10 +86,15 @@ code {
 .about-title {
   position: absolute;
   right: 50%;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--secondary);
+  text-shadow: 1.5px 1px var(--text-shadow);
 }
 .about-text {
   margin: 1rem;
+  color: var(--secondary);
+  text-shadow: 1.5px 1px var(--text-shadow);
+
 }
-.navbar {
-  margin: 1rem;
-}
+
