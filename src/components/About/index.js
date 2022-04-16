@@ -3,7 +3,7 @@ import avatar from '../../assets/images/profile3.jpg'
 export default function About() {
     return (
         <div className='about-container'>
-            <h1 className='about-title'>About Me</h1>
+            <h1 className='title'>About Me</h1>
             <img className="profile-pic" src={avatar} alt="Mike Gordon with lobsters" />
             <p className='about-text'>
                 Hi, I'm Mike

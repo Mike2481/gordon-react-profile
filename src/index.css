@@ -12,9 +12,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
+  height: 100;
   width: auto;
   position: relative;
+  padding-top: 1rem;
+  background-color: black;
 }
 
 :root {
@@ -29,7 +31,7 @@ body {
 }
 .main-container {
   position: relative;
-  height: 100vh;
+  height: 100%;
   background-color: var(--secondary);
 }
 
@@ -158,13 +160,12 @@ textarea {
 .container h1 {
   font-weight: 500;
   font-size: 2rem;
-  color:rgb(77, 131, 225);
+  color: rgb(77, 131, 225);
   text-shadow: 1.5px 1px var(--text-shadow);
 }
 .contact-form {
   animation: slideIn 700ms ease-in;
   margin-top: 1rem;
-
 }
 @keyframes slideIn {
   0% {
@@ -178,11 +179,77 @@ textarea {
 /* footer styling */
 
 .footer {
-  background-color: white;
-
+  background-color: black;
 }
 .logo {
   right: 5%;
   bottom: 0;
   width: 60px;
+  border-radius: 50%;
+}
+.social {
+  position: relative;
+}
+.bottom {
+  justify-content: space-around;
+  margin: 2px 0;
+  text-align: center;
+  height: 40px;
+  left: 100%;
+}
+
+.bottom h3 {
+  color: var(--primary-color);
+}
+
+.bottom a {
+  font-size: 1.25em;
+  width: 100%;
+  position: relative;
+  padding: 2px;
+  text-decoration: none;
+  color: initial;
+}
+
+.bottom .link {
+  transition: font-size ease-out 150ms;
+  font-size: 3em;
+  top: 0%;
+  color: white;
+  margin: 1rem;
+}
+
+.bottom .link:hover {
+  font-size: 2em;
+}
+
+/* portfolio styling */
+
+
+.container h1 {
+  font-weight: 500;
+  font-size: 3rem;
+  color: var(--text-color);
+  text-shadow: 1.5px 1px var(--text-shadow);
+}
+
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    background-color: rgb(77, 131, 225);
+  padding: 10px;
+  box-shadow: 0 0 10px black;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.grid-item h3 {
+  font-size: 3rem;
+  text-decoration: underline;
+  margin-bottom: .5rem;
 }

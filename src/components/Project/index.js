@@ -8,16 +8,53 @@
 
 // A link to the corresponding GitHub repository
 
-// import foodFlick from '../images/food-flick-screenshot.png'
 import React from 'react';
 import runBuddy from '../../assets/images/rb.png'
+import foodFlick from '../../assets/images/food-flick-screenshot.png'
+import fluffyPotato from '../../assets/images/fluffy-potato-screenshot.png'
+import weatherForecaster from '../../assets/images/weather-dashboard.png'
+import budgetTracker from '../../assets/images/budget-tracker.png'
+import noteTaker from '../../assets/images/note-taker.png'
+
 
 const ProjectList = () => {
     return (
-        <section>
-            <article>
+        <section className='grid-container'>
+            <article className='grid-item'>
+                
+                <p><a href='https://mike2481.github.io/run-buddy/'><h3>Run Buddy Website</h3></a></p>
                 <img src={runBuddy} classname="project-image" alt='run buddy website' />
-                <h3>Run Buddy Website</h3>
+                <p><a href='https://github.com/Mike2481/run-buddy'>GitHub Link  <i class="fab fa-github-square fa-lg"></i></a></p>
+            </article>
+            <article className='grid-item'>
+                
+                <p><a href='https://brandonespencer.github.io/Food-and-a-Flick/'><h3>Food N Flick</h3></a></p>
+                <img src={foodFlick} classname="project-image" alt='run buddy website' />
+                <p><a href='https://github.com/brandonespencer/Food-and-a-Flick'>GitHub Link  <i class="fab fa-github-square fa-lg"></i></a></p>
+            </article>
+            <article className='grid-item'>
+                
+                <p><a href='https://rocky-river-85271.herokuapp.com/'><h3>Fluffy Potato Website</h3></a></p>
+                <img src={fluffyPotato} classname="project-image" alt='run buddy website' />
+                <p><a href='https://github.com/matthewpetriella/fluffy-potato'>GitHub Link  <i class="fab fa-github-square fa-lg"></i></a></p>
+            </article>
+            <article className='grid-item'>
+                
+                <p><a href='https://mike2481.github.io/Mike-s-Weather-Forecaster/'><h3>Weather Forecast Website</h3></a></p>
+                <img src={weatherForecaster} classname="project-image" alt='run buddy website' />
+                <p><a href='https://github.com/Mike2481/Mike-s-Weather-Forecaster'>GitHub Link  <i class="fab fa-github-square fa-lg"></i></a></p>
+            </article>
+            <article className='grid-item'>
+                
+                <p><a href='https://fierce-lake-77648.herokuapp.com/'><h3>Budget Tracker</h3></a></p>
+                <img src={budgetTracker} classname="project-image" alt='run buddy website' />
+                <p><a href='https://github.com/Mike2481/gordon-budget-tracker'>GitHub Link  <i class="fab fa-github-square fa-lg"></i></a></p>
+            </article>
+            <article className='grid-item'>
+                
+                <p><a href='https://agile-brook-83776.herokuapp.com/'><h3>Note Taker</h3></a></p>
+                <img src={noteTaker} classname="project-image" alt='run buddy website' />
+                <p><a href='https://github.com/Mike2481/Gordon-Note-Taker'>GitHub Link  <i class="fab fa-github-square fa-lg"></i></a></p>
             </article>
         </section>
     )
