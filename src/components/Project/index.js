@@ -7,7 +7,7 @@
 // A link to the deployed application
 
 // A link to the corresponding GitHub repository
-
+// import all images for projects
 import React from 'react';
 import runBuddy from '../../assets/images/rb.png'
 import foodFlick from '../../assets/images/food-flick-screenshot.png'
@@ -19,6 +19,7 @@ import noteTaker from '../../assets/images/note-taker.png'
 
 const ProjectList = () => {
     return (
+        // set up container for project grid
         <section className='grid-container'>
             <article className='grid-item'>
                 

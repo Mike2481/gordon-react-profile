@@ -1,13 +1,17 @@
-import avatar from '../../assets/images/profile3.jpg'
+// bring in profile image
 
+import avatar from '../../assets/images/profile3.jpg'
+// export jsx
 export default function About() {
     return (
         <div className='about-container'>
             <h1 className='about-title'>About Me</h1>
             <div className='animation-box'>
                 <div className='pic-animation'>
+                    {/* add profile image in from import */}
                     <img className="profile-pic" src={avatar} alt="Mike Gordon with lobsters" />
                 </div>
+                {/* div class to set animation */}
                 <div className='about-animation'>
                     <p className='about-text'>
                         Hi, I'm Mike

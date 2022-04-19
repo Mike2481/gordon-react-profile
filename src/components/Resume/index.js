@@ -1,11 +1,13 @@
 export default function Resume() {
     return (
         <div className="resume">
+            {/* link google doc resume */}
             <div className="resume-title"><a className="resume-text" href="https://docs.google.com/document/d/1ExRP1BaHd5kDP3TcExjqH-8sineNliN_GdbHmArjbxk/edit?usp=sharing" target="blank">Download My Resume</a> </div>
             <br></br>
             <div className="proficiencies">
                 <h3 className="resume-text">Front-End Proficiencies</h3>
                 <ul>
+                    {/* list of front end proficiencies */}
                     <li className="resume-text-li">HTML</li>
                     <li className="resume-text-li">CSS</li>
                     <li className="resume-text-li">JaveScript</li>
@@ -16,6 +18,7 @@ export default function Resume() {
                 </ul>
                 <h3 className="resume-text">Back-End Proficiencies</h3>
                 <ul>
+                    {/* list of back end proficiencies */}
                     <li className="resume-text-li">API's</li>
                     <li className="resume-text-li">Node</li>
                     <li className="resume-text-li">Express</li>
