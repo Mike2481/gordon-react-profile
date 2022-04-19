@@ -310,3 +310,46 @@ textarea {
   }
 
 }
+
+/* resume section styling */
+.resume-text {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  text-shadow: 1.5px 1px var(--text-shadow);
+  color: var(--text-color);
+  margin: 1rem;
+
+}
+.resume-text-li {
+  font-size: 1rem;
+  text-shadow: 1.5px 1px var(--text-shadow);
+  color: var(--text-color);
+  margin-left: 1.5rem;
+
+
+}
+.resume {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.resume-title {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  position: absolute;
+  left: 0;
+  margin: 1rem;
+}
+.proficiencies {
+  margin-bottom: 2rem;
+}
+@media (max-width: 750px) {
+  .resume {
+    display: block;
+  }
+  .resume-title {
+    position: relative;
+  }
+}
