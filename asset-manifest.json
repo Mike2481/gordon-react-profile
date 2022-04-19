@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/photo-port/static/css/main.27c4ab75.css",
-    "main.js": "/photo-port/static/js/main.988ad2b4.js",
-    "static/js/787.8b7809bf.chunk.js": "/photo-port/static/js/787.8b7809bf.chunk.js",
-    "static/media/food-flick-screenshot.png": "/photo-port/static/media/food-flick-screenshot.2d68d1cde42dd1139225.png",
-    "static/media/rb.png": "/photo-port/static/media/rb.81c605eea0562be1e6e7.png",
-    "static/media/fluffy-potato-screenshot.png": "/photo-port/static/media/fluffy-potato-screenshot.ec84e35ed069150ee0d7.png",
-    "static/media/weather-dashboard.png": "/photo-port/static/media/weather-dashboard.b3057dd5273fd802bfd2.png",
-    "static/media/budget-tracker.png": "/photo-port/static/media/budget-tracker.7a2a2257b4df89c402cc.png",
-    "static/media/mike-gordon-logo.jpg": "/photo-port/static/media/mike-gordon-logo.0ae087725911d3b6cefb.jpg",
-    "static/media/note-taker.png": "/photo-port/static/media/note-taker.c8f89b26687eb8a91ea7.png",
-    "static/media/profile3.jpg": "/photo-port/static/media/profile3.234e8b74206425f838a6.jpg",
-    "index.html": "/photo-port/index.html",
-    "main.27c4ab75.css.map": "/photo-port/static/css/main.27c4ab75.css.map",
-    "main.988ad2b4.js.map": "/photo-port/static/js/main.988ad2b4.js.map",
-    "787.8b7809bf.chunk.js.map": "/photo-port/static/js/787.8b7809bf.chunk.js.map"
+    "main.css": "/gordon-react-profile/static/css/main.27c4ab75.css",
+    "main.js": "/gordon-react-profile/static/js/main.7b7ad473.js",
+    "static/js/787.8b7809bf.chunk.js": "/gordon-react-profile/static/js/787.8b7809bf.chunk.js",
+    "static/media/food-flick-screenshot.png": "/gordon-react-profile/static/media/food-flick-screenshot.2d68d1cde42dd1139225.png",
+    "static/media/rb.png": "/gordon-react-profile/static/media/rb.81c605eea0562be1e6e7.png",
+    "static/media/fluffy-potato-screenshot.png": "/gordon-react-profile/static/media/fluffy-potato-screenshot.ec84e35ed069150ee0d7.png",
+    "static/media/weather-dashboard.png": "/gordon-react-profile/static/media/weather-dashboard.b3057dd5273fd802bfd2.png",
+    "static/media/budget-tracker.png": "/gordon-react-profile/static/media/budget-tracker.7a2a2257b4df89c402cc.png",
+    "static/media/mike-gordon-logo.jpg": "/gordon-react-profile/static/media/mike-gordon-logo.0ae087725911d3b6cefb.jpg",
+    "static/media/note-taker.png": "/gordon-react-profile/static/media/note-taker.c8f89b26687eb8a91ea7.png",
+    "static/media/profile3.jpg": "/gordon-react-profile/static/media/profile3.234e8b74206425f838a6.jpg",
+    "index.html": "/gordon-react-profile/index.html",
+    "main.27c4ab75.css.map": "/gordon-react-profile/static/css/main.27c4ab75.css.map",
+    "main.7b7ad473.js.map": "/gordon-react-profile/static/js/main.7b7ad473.js.map",
+    "787.8b7809bf.chunk.js.map": "/gordon-react-profile/static/js/787.8b7809bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.27c4ab75.css",
-    "static/js/main.988ad2b4.js"
+    "static/js/main.7b7ad473.js"
   ]
 }
