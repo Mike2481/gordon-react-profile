@@ -1,7 +1,7 @@
 {
   "name": "gordon-react-profile",
   "version": "0.1.0",
-  "homepage": "http://Mike2481.github.io/photo-port",
+  "homepage": "http://Mike2481.github.io/gordon-react-profile",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
