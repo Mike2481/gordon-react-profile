@@ -14,6 +14,8 @@ function ContactForm() {
         message: "",
     });
     const { name, email, message } = formState;
+    let form = document.getElementById("contact-form");
+    let text = document.getElementById("comment");
     // use handleChange method and validate helpers 
     function handleChange(e) {
         // email validation
@@ -30,9 +32,10 @@ function ContactForm() {
                     setErrorMessage("");
                 }
             }
-        } else if (e.target.name === "message") {
+        } if (e.target.name === "message") {
             // message validation
             const isMessage = validateMessage(e.target.value);
+            console.log(isMessage);
             if (!isMessage) {
                 setErrorMessage("Message is required");
             } else {
@@ -46,7 +49,7 @@ function ContactForm() {
         if (!errorMessage) {
             // if no errors in form, use formState for each field
             setFormState({ ...formState, [e.target.name]: e.target.value });
-            console.log("errorMessage", errorMessage);
+            // console.log("errorMessage", errorMessage);
         }
     }
 
@@ -56,6 +59,9 @@ function ContactForm() {
             // submit changes formState
             setFormState({ [e.target.name]: e.target.value });
             console.log('Form', formState);
+            form.reset();
+            text.value = ('');
+
         }
     };
 
@@ -91,7 +97,7 @@ function ContactForm() {
                 <div>
                     <label htmlFor="message">Message:</label>
                     <br></br>
-                    <textarea
+                    <textarea id="comment"
                         name="message"
                         defaultValue={message}
                         onBlur={handleChange}

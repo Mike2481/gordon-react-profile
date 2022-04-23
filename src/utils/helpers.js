@@ -10,6 +10,6 @@ export function validateEmail(email) {
 }
 // helper function used to validate message
 export function validateMessage(message) {
-  let wd = /\b($word)\b/i;
+  let wd = /.*/i;
   return wd.test(String(message));
 }
