@@ -24,7 +24,7 @@ Once the repo has been cloned, please run npm install to ensure all dependencies
 
 ## Usage
 
-All project links have been verified and will open the target in a new tab. Contact form will require a valid email and message to be entered and will display an error message when applicable. Upon form submit, the submitted form data will be displayed in the console and the form will clear. Screenshots of all "pages" are provided
+All project links have been verified and will open the target in a new tab. Contact form will require a valid email and message to be entered and will display an error message when applicable. Upon form submit, the submitted form data will be displayed in the console and the form will clear. Screenshots of all "pages" are provided and deployed application can be seen [here](https://mike2481.github.io/gordon-react-profile/)
 
 ![](./src/assets/images/about.png)
 

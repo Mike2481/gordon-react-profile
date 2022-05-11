@@ -15,12 +15,19 @@ import fluffyPotato from '../../assets/images/fluffy-potato-screenshot.png'
 import weatherForecaster from '../../assets/images/weather-dashboard.png'
 import budgetTracker from '../../assets/images/budget-tracker.png'
 import noteTaker from '../../assets/images/note-taker.png'
+import shopShine from '../../assets/images/shopShine'
 
 
 const ProjectList = () => {
     return (
         // set up container for project grid
         <section className='grid-container'>
+            <article className='grid-item'>
+                
+                <p><a href='https://serene-sea-72116.herokuapp.com/' rel="noreferrer" target={"_blank"}><h3>Shop Shine</h3></a></p>
+                <img src={shopShine} classname="project-image" alt='shop shine website' />
+                <p><a href='https://github.com/rpkrupali1/shop-shine' rel="noreferrer" target={"_blank"}>GitHub Link  <i className="fab fa-github-square fa-lg"></i></a></p>
+            </article>
             <article className='grid-item'>
                 
                 <p><a href='https://mike2481.github.io/run-buddy/' rel="noreferrer" target={"_blank"}><h3>Run Buddy Website</h3></a></p>
