@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/gordon-react-profile/static/css/main.27c4ab75.css",
-    "main.js": "/gordon-react-profile/static/js/main.42c2a8cc.js",
+    "main.js": "/gordon-react-profile/static/js/main.9f81212e.js",
     "static/js/787.8b7809bf.chunk.js": "/gordon-react-profile/static/js/787.8b7809bf.chunk.js",
     "static/media/food-flick-screenshot.png": "/gordon-react-profile/static/media/food-flick-screenshot.2d68d1cde42dd1139225.png",
+    "static/media/shop-shine.png": "/gordon-react-profile/static/media/shop-shine.7d23a9a78b769c77b964.png",
     "static/media/rb.png": "/gordon-react-profile/static/media/rb.81c605eea0562be1e6e7.png",
     "static/media/fluffy-potato-screenshot.png": "/gordon-react-profile/static/media/fluffy-potato-screenshot.ec84e35ed069150ee0d7.png",
     "static/media/weather-dashboard.png": "/gordon-react-profile/static/media/weather-dashboard.b3057dd5273fd802bfd2.png",
@@ -13,11 +14,11 @@
     "static/media/profile3.jpg": "/gordon-react-profile/static/media/profile3.234e8b74206425f838a6.jpg",
     "index.html": "/gordon-react-profile/index.html",
     "main.27c4ab75.css.map": "/gordon-react-profile/static/css/main.27c4ab75.css.map",
-    "main.42c2a8cc.js.map": "/gordon-react-profile/static/js/main.42c2a8cc.js.map",
+    "main.9f81212e.js.map": "/gordon-react-profile/static/js/main.9f81212e.js.map",
     "787.8b7809bf.chunk.js.map": "/gordon-react-profile/static/js/787.8b7809bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.27c4ab75.css",
-    "static/js/main.42c2a8cc.js"
+    "static/js/main.9f81212e.js"
   ]
 }
